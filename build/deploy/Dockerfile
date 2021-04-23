@@ -19,11 +19,11 @@ RUN mkdir /licenses
 #RUN ls -la /tmp/
 #RUN ls -la /tmp/build/
 #RUN ls -la /tmp/build/inputs/
-COPY toto /cockroach/
+COPY toto cockroach /cockroach/
 #COPY  cockroach /cockroach/
-COPY licenses/* /licenses/
+ADD licenses/* /licenses/
 # Install GEOS libraries.
-COPY libgeos.so libgeos_c.so /usr/local/lib/cockroach/
+ADD libgeos.so libgeos_c.so /usr/local/lib/cockroach/
 
 # Set working directory so that relative paths
 # are resolved appropriately when passed as args.
