@@ -17,6 +17,7 @@ RUN mkdir /usr/local/lib/cockroach
 RUN mkdir /cockroach 
 RUN mkdir /licenses
 RUN ls -la
+RUN whoami
 COPY cockroach.sh cockroach /cockroach/
 COPY licenses/* /licenses/
 # Install GEOS libraries.
