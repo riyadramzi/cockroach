@@ -19,7 +19,7 @@ RUN mkdir /licenses
 #RUN ls -la /tmp/
 #RUN ls -la /tmp/build/
 #RUN ls -la /tmp/build/inputs/
-COPY toto cockroach /cockroach/
+COPY toto /cockroach/
 #COPY  cockroach /cockroach/
 ADD licenses/* /licenses/
 # Install GEOS libraries.
