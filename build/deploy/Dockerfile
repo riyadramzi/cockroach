@@ -16,10 +16,10 @@ RUN microdnf update -y \
 RUN mkdir /usr/local/lib/cockroach 
 RUN mkdir /cockroach 
 RUN mkdir /licenses
-RUN ls -la /tmp/
-RUN ls -la /tmp/build/
+#RUN ls -la /tmp/
+#RUN ls -la /tmp/build/
 #RUN ls -la /tmp/build/inputs/
-COPY cockroach.sh /cockroach/
+COPY toto /cockroach/
 #COPY  cockroach /cockroach/
 COPY licenses/* /licenses/
 # Install GEOS libraries.
